@@ -1,0 +1,39 @@
+import pandas as pd
+
+datos = [100,200,300,400,500]
+dias_semana = ["lunes","martes","miercoles","jueves","viernes"]
+datos = pd.Series ([100,200,300,400,500], index=["lunes","martes","miercoles","jueves","viernes"])
+print(datos)
+print(["miercoles"])
+print(datos.mean())
+print(datos+50)
+
+datos = {
+    "producto": ["manzana", "banana","cereza","mandarina","pera","uva"],
+    "precio": [2.5,1.8,3.0,2.4,3.3,9.8],
+    "cantidad": [10,15,8,7,9,25] }
+df = pd.DataFrame(datos)
+print(df)# muestra data frame
+print(df.loc[2])
+print(df.iloc[2])
+print(df["precio"])#columna precio
+print(df["precio"].sum())# suma valores columna precio
+df["resultado"] = df["precio"]* df["cantidad"]# multiplica precio por cantidad
+print(df)
+print(df["resultado"])#precio total
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
