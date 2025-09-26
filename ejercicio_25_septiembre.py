@@ -57,14 +57,14 @@ df = pd.DataFrame(Data)
 print(f"DataFrame de Fechas:\n{df}")
 print("*"*100)
 
-"""#Convertir la columna a Datatime
-df["Fechas"] = pd.to_datetime(df["Fechas"])
-print(f"DataFrame convertido a formato datatime:\n{df}")
-print("*"*100)
+# #Convertir la columna a Datatime
+# df["Fechas"] = pd.to_datetime(df["Fechas"])
+# print(f"DataFrame convertido a formato datatime:\n{df}")
+# print("*"*100)
 
-df["Fechas"]= pd.to_datetime(df["Fechas"],format="%Y-%m-%d")
-print(f"DataFrame en nuevo formato:\n{df}")
-print("*"*100)
+# df["Fechas"]= pd.to_datetime(df["Fechas"],format="%Y-%m-%d")
+# print(f"DataFrame en nuevo formato:\n{df}")
+# print("*"*100)
 
 #Nuevo DataFrame de Fechas
 Data = {"Fechas": ["2025-01-01", "2025-02-15", "2025/03/01"]}
@@ -89,7 +89,10 @@ print(f"DataFrame con el día primero:\n{df}")
 # Formateamos para mostrar día primero
 df["Fechas_formateadas"] = df["Fechas"].dt.strftime("%d-%m-%Y")
 print(f"DataFrame con el día de primeras\n{df}")
-"""
+
+df["Fechas_formateadas"]=pd.to_datetime(df["Fechas"],errors="coerce")
+print(f"DataFrame convertido a formato datatime:\n(df{"Fechas_formateadas"})")
+print(f"DataFrame con el dia primero:\n{df}")
 
 Data={
     "ID":[1,2,2,3,4],
@@ -107,3 +110,4 @@ print("*"*100)
 df["Edad"]=df["Edad"].astype(float)
 print(df)
 print("*"*100)
+
