@@ -21,3 +21,22 @@ plt.title("Ventas por Producto",fontsize=16, fontweight='bold', color='darkblue'
 plt.xlabel("Productos",fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')#fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace'
 plt.ylabel("Ventas", fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')#
 plt.show()
+
+# Gráfico de líneas
+meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio']
+ventas = [250, 300, 400, 350, 500, 450]
+
+plt.plot(meses, ventas, marker='o', color='darkblue')
+plt.title("Evolución de Ventas", fontsize=16, fontweight='bold', color='darkblue', fontfamily='monospace')
+plt.ylabel("Ventas", fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')
+plt.grid(True)
+plt.show()
+
+# Histograma
+edades = [20, 21, 22, 25, 26, 30, 35, 40]
+
+plt.hist(edades, bins=6, color='skyblue', edgecolor='black')
+plt.title("Distribución de Edades", fontsize=16, fontweight='bold', color='darkblue', fontfamily='monospace')
+plt.xlabel("Rango de Edades", fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')
+plt.ylabel("Frecuencia", fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')
+plt.show()
