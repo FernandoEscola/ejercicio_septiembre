@@ -35,7 +35,7 @@ plt.show()
 # Histograma
 edades = [20, 21, 22, 25, 26, 30, 35, 40]
 
-plt.hist(edades, bins=6, color='skyblue', edgecolor='black')
+plt.hist(edades, bins=30, color='skyblue', edgecolor='black')
 plt.title("Distribución de Edades", fontsize=16, fontweight='bold', color='darkblue', fontfamily='monospace')
 plt.xlabel("Rango de Edades", fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')
 plt.ylabel("Frecuencia", fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')
@@ -45,7 +45,7 @@ plt.show()
 ingresos = [100,200,300,400,500]
 gasto = [20,40,60,80,100]
 
-plt.scatter(gasto, ingresos, color="red")
+plt.scatter(gasto, ingresos, color="blue")
 plt.title("relacion entre gasto e ingresos")
 plt.xlabel("gasto")
 plt.ylabel("ingresos")
