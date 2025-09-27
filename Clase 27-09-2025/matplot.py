@@ -23,8 +23,8 @@ plt.ylabel("Ventas", fontsize=12, fontweight='bold', color='darkgreen', fontfami
 plt.show()
 
 # Gráfico de líneas
-meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio']
-ventas = [250, 300, 400, 350, 500, 450]
+meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', "octubre"]
+ventas = [250, 300, 400, 350, 500, 450, 300, 200]
 
 plt.plot(meses, ventas, marker='o', color='darkblue')
 plt.title("Evolución de Ventas", fontsize=16, fontweight='bold', color='darkblue', fontfamily='monospace')
@@ -39,4 +39,14 @@ plt.hist(edades, bins=6, color='skyblue', edgecolor='black')
 plt.title("Distribución de Edades", fontsize=16, fontweight='bold', color='darkblue', fontfamily='monospace')
 plt.xlabel("Rango de Edades", fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')
 plt.ylabel("Frecuencia", fontsize=12, fontweight='bold', color='darkgreen', fontfamily='monospace')
+plt.show()
+
+#Dispersion
+ingresos = [100,200,300,400,500]
+gasto = [20,40,60,80,100]
+
+plt.scatter(gasto, ingresos, color="red")
+plt.title("relacion entre gasto e ingresos")
+plt.xlabel("gasto")
+plt.ylabel("ingresos")
 plt.show()
